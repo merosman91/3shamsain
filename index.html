@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شمسين - الحاسبة الشمسية للسودان</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo-container">
+                <div class="logo" aria-hidden="true"></div>
+                <div>
+                    <h1 id="app-title">شمسين</h1>
+                    <p>حاسبة الطاقة الشمسية للسودان</p>
+                </div>
+            </div>
+            <button class="mode-toggle" id="modeToggle" aria-label="تبديل وضع الليل والنهار">
+                <i class="fas fa-moon"></i> وضع الليل
+            </button>
+        </header>
+        
+        <main id="main-content">
+            <section class="section" aria-labelledby="report-title">
+                <input type="text" id="report-title" placeholder="عنوان التقرير (اختياري)" 
+                       aria-label="عنوان التقرير" class="report-title-input">
+            </section>
+            
+            <section class="section" aria-labelledby="system-settings-title">
+                <h2 id="system-settings-title" class="section-title">
+                    <i class="fas fa-cog"></i> إعدادات النظام
+                </h2>
+                <!-- محتوى إعدادات النظام -->
+            </section>
+            
+            <section class="section" id="system-connection" aria-labelledby="connection-title">
+                <h2 id="connection-title" class="section-title">
+                    <i class="fas fa-project-diagram"></i> طريقة توصيل المنظومة
+                </h2>
+                <!-- محتوى طريقة التوصيل -->
+            </section>
+            
+            <section class="tips-section" aria-labelledby="tips-title">
+                <h3 id="tips-title"><i class="fas fa-lightbulb"></i> نصائح للحساب الصحيح</h3>
+                <!-- محتوى النصائح -->
+            </section>
+            
+            <section class="section" aria-labelledby="devices-title">
+                <h2 id="devices-title" class="section-title">
+                    <i class="fas fa-plug"></i> إضافة الأجهزة
+                </h2>
+                <!-- محتوى إضافة الأجهزة -->
+            </section>
+            
+            <section class="section" aria-labelledby="results-title">
+                <button id="calculate-btn" class="calculate-button">
+                    <i class="fas fa-calculator"></i> حساب النظام الشمسي
+                </button>
+                
+                <div id="results" class="result-card" style="display:none;" aria-live="polite">
+                    <!-- نتائج الحساب -->
+                </div>
+            </section>
+        </main>
+
+        <footer class="credits" aria-label="حقوق النشر">
+            <p>تصميم <a href="mailto:merghanigasimosman@gmail.com">ميرغني أبوالقاسم عثمان</a></p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="app.js" type="module"></script>
+</body>
+              </html>
